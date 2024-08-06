@@ -3,8 +3,7 @@ import { TwitterLogo } from '../../assets/images/icons'
 import { Link } from 'react-router-dom'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
-import {Context } from "../../Context/Context"
-
+import { Context } from  "../../Context/Context"
 
 
 function SignIn() {
@@ -18,8 +17,6 @@ function SignIn() {
     if (data.login == "Azamat" && data.password == '999') {
       setToken(data)
       e.target.reset()
-    }else{
-      alert = "xato"
     }
   }
   return (

@@ -11,8 +11,8 @@ function SignIn() {
   const handleSubmitLogin = (e) => {
     e.preventDefault()
     const data = {
-      login: e.target.login.value,
-      password: e.target.Password.value
+      login: e.target.login.value.trim(),
+      password:e.target.Password.value.trim()
     }
     if (data.login == "Azamat" && data.password == '999') {
       setToken(data)

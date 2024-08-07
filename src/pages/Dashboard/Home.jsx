@@ -56,7 +56,6 @@ function Home() {
       statisticCount:null,
       postImage:KebabImg,
     },
-
   ])
 
   return (
@@ -100,7 +99,8 @@ function Home() {
               </label>
             </div>
           </div>
-          <Button  extraStyle={`w-[108px] duration-300 absolute bottom-[5px] right-[18px] ${postValue ? "" : "opacity-[40%]"}`} title={"Tweet"} type={"submit"} />
+          
+          <Button  extraStyle ={`!w-[108px] duration-300 absolute bottom-[5px] right-[18px] ${postValue ? "" : "opacity-[40%]"}`} title={"Tweet"} type={"submit"} />
         </form>
         <ul>
             {postList.length > 0 && postList.map(item => <PostItem  key={item.id}  item = {item}  />)}
